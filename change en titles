@@ -1,0 +1,45 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Log current URL
+        console.log("Current URL:", window.location.href);
+
+        // Check if the URL contains 'en'
+        var indexOfEn = window.location.href.indexOf('/en/');
+        console.log("Index of 'en':", indexOfEn);
+        
+        if(indexOfEn > -1) {
+            // Translate text to English for widget about-widget
+            $(".widget.about-widget h4.widget_title").text("About");
+            $(".widget.about-widget .text").html("With professionalism, excellent expertise, and efficiency, we can handle every unwanted visitor of your property.<p><a href='/'>Pest Control</a> © 2024 <br> <a href='https://www.boldmarketingcy.com/'>Developed by Bold Marketing</a></p>");
+
+            // Translate text to English for each links-widget column
+            $(".elementor-element-495f1aa .widget.links-widget h4.widget_title").text("Menu");
+            $("#menu-footer-menu li.menu-item-1150 a").text("About Us");
+            $("#menu-footer-menu li.menu-item-1151 a").text("Contact");
+            $("#menu-footer-menu li.menu-item-1152 a").text("Services");
+            $("#menu-footer-menu li.menu-item-1153 a").text("Encyclopedia");
+            $("#menu-footer-menu li.menu-item-3232 a").text("Products");
+
+            $(".elementor-element-1ce5be4 .widget.links-widget h4.widget_title").text("Encyclopedia");
+            $("#menu-footer-menu-two li.menu-item-1750 a").text("Cockroaches");
+            $("#menu-footer-menu-two li.menu-item-1749 a").text("House Flies");
+            $("#menu-footer-menu-two li.menu-item-1751 a").text("Ants");
+            $("#menu-footer-menu-two li.menu-item-1752 a").text("Stored Product Insects");
+            $("#menu-footer-menu-two li.menu-item-1753 a").text("Rodents");
+
+            // Translate text to English for contact-widget
+            $(".widget.contact-widget h4.widget_title").text("Contact");
+            $(".widget.contact-widget ul li:nth-child(2) a").text("info@apentomotiki.com.cy");
+            $(".widget.contact-widget ul li:nth-child(3) a").text("+357 70070004");
+                        
+            // Translate text to English for footer-menu
+            $(".footer-menu ul li a").text("Privacy Policy").attr('href', '/en/privacy-policy');
+
+            // Translate text to English for footer-menu
+            $(".footer-menu ul li a").text("Privacy Policy");
+
+            $(".link-btn a span").text("Products");
+        }
+    });
+</script>
